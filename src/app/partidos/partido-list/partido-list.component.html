@@ -1,0 +1,37 @@
+<div *ngIf="selected">
+  <app-partido-detail [partidoDetail]="selectedPartido"></app-partido-detail>
+</div>
+
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4"> # </th>
+          <th class="h4">equipo1</th>
+          <th class="h4">goles1</th>
+          <th class="h4">goles2</th>
+          <th class="h4">equipo2</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let element of partidos">
+          <td>
+            <dd>{{element.id}}</dd>
+          </td>
+          <td>
+            <dd>{{element.equipo1}}</dd>
+          </td>
+          <td>
+            <dd>{{element.goles1}}</dd>
+          <td>
+            <dd>{{element.goles2}}</dd>
+          <td>
+            <dd>{{element.equipo2}}</dd>
+       </tr>
+      </tbody>
+      <tfoot>
+    </table>
+  </div>
+</div>
