@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ equipoDetail.letra }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ equipoDetail.letra }}"
+          alt="{{ equipoDetail.goal_differential}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt class="bold">letra</dt>
+        <dd class="caption">{{ equipoDetail.letra}}</dd>
+        <hr />
+        <dt class="bold">Draws</dt>
+        <dd>{{ equipoDetail.draws }}</dd>
+      </dl>
+    </div>
+  </div>
+ </div>

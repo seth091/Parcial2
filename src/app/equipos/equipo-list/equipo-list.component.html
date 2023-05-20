@@ -1,5 +1,5 @@
 <div *ngIf="selected">
-  <app-partido-detail [partidoDetail]="selectedPartido"></app-partido-detail>
+  <app-equipo-detail [equipoDetail]="selectedEquipo"></app-equipo-detail>
 </div>
 
 <div class="container-fluid">
@@ -8,20 +8,17 @@
       <thead>
         <tr>
           <th class="h4"> # </th>
-          <th class="h4">attendance</th>
-          <th class="h4">away_team</th>
-          <th class="h4">away_team_country</th>
-          <th class="h4">home_team</th>
-          <th class="h4">home_team_country</th>
-          <th class="h4">last_checked_at</th>
-          <th class="h4">last_changed_at</th>
-          <th class="h4">location</th>
-          <th class="h4">venue</th>
+          <th class="h4">letra</th>
+          <th class="h4">draws</th>
+          <th class="h4">games_played</th>
+          <th class="h4">goal_differential</th>
+          <th class="h4">goals_against</th>
+          <th class="h4">goals_for</th>
         </tr>
       </thead>
       <tbody>
 
-        <tr *ngFor="let element of partidos">
+        <tr *ngFor="let element of equipos">
           <td>
             <dd>{{element.id}}</dd>
           </td>

@@ -2,21 +2,21 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import {Partido} from './partido';
-import { PartidoDetail } from './partido-detail';
+import {Equipo} from './equipo';
+import { EquipoDetail } from './equipo-detail';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class PartidoService {
+export class EquipoService {
 
-  private apiUrl: string = environment.baseUrl + '/partido';
+  private apiUrl: string = environment.baseUrl + '/equipo';
 
   constructor(private http: HttpClient) { }
 
-  getPartidos(): Observable<PartidoDetail[]> {
-    return this.http.get<PartidoDetail[]>(this.apiUrl);
+  getEquipos(): Observable<EquipoDetail[]> {
+    return this.http.get<EquipoDetail[]>(this.apiUrl);
   }
 
 
